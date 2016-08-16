@@ -62,7 +62,7 @@ app.locals.scripts = viewtags.scripts;
 app.locals.styles = viewtags.styles;
 ```
 This is done to allow handlebars views to seamlessly inject script or style tags. The 'viewtags' module is a simple function used by webpack to determine the filenames of js/css for the latest build.
-In production build (build:prod) this also enables easy injection of tags hashed filenames
+In production build (build:prod) this also enables easy injection of hashed filenames
 
 The viewtags module currently attaches tags for the {{{scripts}}} and {{{styles}}} hbs placeholders, more can be easily supported by editing the code in config/webpack/webpack.viewtags.js:
 
@@ -78,7 +78,7 @@ The viewtags module currently attaches tags for the {{{scripts}}} and {{{styles}
 
 ## Testing
 
-Jest was chosen as the test suite as it supports Jasmine syntax, full coverage reports and is being actively developed by Facebook.
+Jest was chosen as the test suite as it supports Jasmine syntax, full coverage reports, and is being actively developed by Facebook.
 
 All Jest configuration settings can be found in package.json, it has been configured to:
 
