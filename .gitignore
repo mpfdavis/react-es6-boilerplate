@@ -1,0 +1,9 @@
+node_modules
+npm-debug.log
+bower
+*.log
+.DS_Store
+lib
+coverage
+dist
+build

@@ -1,0 +1,29 @@
+body {
+  background: #484848; 
+}
+
+.App {
+  font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 140px;
+}
+
+.App-header {
+  padding: 20px 0 0 0;
+  color: rgb(97, 218, 251);
+}
+
+.App-intro {
+  padding-bottom:20px;
+  font-size: 16px;
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
