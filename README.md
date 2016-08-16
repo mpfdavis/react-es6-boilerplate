@@ -5,9 +5,9 @@ This boilerplate avoids making too many architectural decisions and instead focu
 
 ## Versions
 
-This has been tested and works with Node 4.3.0 and NPM 2.10.1 however, you will see a huge (buildtime) performance improvement using Node 6+ and NPM 3+ due to Babel module discovery improvements 
+This has been tested and works with Node 4.3.0 and NPM 2.10.1 however, you will see a huge (buildtime) performance improvement using Node 6+ and NPM 3+ due to Babel module discovery improvements.
 
- ## Features
+## Features
 
  - Babel v6 (support for all ES6 syntax client and server)
  - React v15
