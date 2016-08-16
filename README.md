@@ -19,19 +19,19 @@ This has been tested and works with Node 4.3.0 and NPM 2.10.1 however, you will 
 
 ## Get started
 
-1. Install required dependencies via npm 
+Install required dependencies via npm 
 ```
 npm install
 ```
-2. Build application and start watching for changes
+Build application and start watching for changes
 ```
 npm run build
 ```
-3. Run tests (optional) - outputs reports to terminal and ./coverage 
+Run tests (optional) - outputs reports to terminal and ./coverage 
 ```
 npm test
 ```
-4. Run application (new terminal window)
+Run application (new terminal window)
 ```
 npm start 
 ```
