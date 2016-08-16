@@ -5,10 +5,10 @@ This boilerplate avoids making too many architectural decisions and instead focu
 
 ## Versions
 
-This has been tested and works with Node 4.3.0 and NPM 2.10.1 however, you will see a huge performance improvement using Node 6 and NPM 3 due to Babel module discovery improvements 
+This has been tested and works with Node 4.3.0 and NPM 2.10.1 however, you will see a huge (buildtime) performance improvement using Node 6 and NPM 3 due to Babel module discovery improvements 
 
 ```
- "engines" : { "node" : ">=6.3.1", "npm" : "~3.10.3" },
+ "engines" : { "node" : ">=6.3.1", "npm" : "~3.10.3" }
 ```
 
  ## Features
