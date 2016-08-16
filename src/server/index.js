@@ -28,6 +28,7 @@ app.locals.styles = viewtags.styles;
 app.use('/static/assets', express.static(path.join(__dirname, '../assets')));
 app.use(routes);
 
+//run server
 app.listen(app.get('port'), () => {
     console.log(`Server listening on port ${app.get('port')} in ${app.settings.env} mode`);
 });
