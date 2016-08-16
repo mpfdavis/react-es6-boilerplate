@@ -40,8 +40,7 @@ Webpack will watch for changes and automatically recompile your javascript and c
 
 ## Build and runtime pattern
 
-* Babel CLI takes care of transpilation and webpack ensures fast recompile 
-
+- Babel CLI takes care of transpilation and webpack ensures fast recompile 
 - Avoided using hot reloader modules
 - Avoided using babel-polyfill - this attaches to global
 - Avoided babel-node - this is slow 
