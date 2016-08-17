@@ -2,8 +2,10 @@ node_modules
 npm-debug.log
 bower
 *.log
+*.zip
 .DS_Store
 lib
 coverage
 dist
+target
 build

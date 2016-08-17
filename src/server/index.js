@@ -2,8 +2,8 @@
 import path from 'path';
 import express from 'express';
 import exphbs from 'express-handlebars';
-import viewtags from '../assets/viewtags.json';
-import routes from './routes/'
+import tags from './views/tags';
+import routes from './routes'
 
 const app = express().disable('x-powered-by').disable('etag');
 
@@ -21,8 +21,8 @@ app.engine('hbs', exphbs({
 }));
 
 //make script tags available to views
-app.locals.scripts = viewtags.scripts;
-app.locals.styles = viewtags.styles;
+app.locals.scripts = tags.scripts;
+app.locals.styles = tags.styles;
 
 //register routes
 app.use('/static/assets', express.static(path.join(__dirname, '../assets')));

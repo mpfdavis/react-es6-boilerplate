@@ -11,10 +11,13 @@
     "test": "jest --coverage",
     "build": "npm run build:clean && npm run build:server && npm run build:webpack:dev",
     "build:prod": "npm run build:clean && npm run build:server && npm run build:webpack:prod",
-    "build:clean": "rm -rf build",
+    "build:clean": "rm -rf build && mkdir -p build && mkdir -p build/server && mkdir -p build/assets",
     "build:server": "babel src/server --out-dir build/server --copy-files",
     "build:webpack:dev": "webpack --watch --progress --config src/config/webpack/webpack.config.dev.js",
-    "build:webpack:prod": "webpack --progress --config src/config/webpack/webpack.config.prod.js"
+    "build:webpack:prod": "webpack --progress --config src/config/webpack/webpack.config.prod.js",
+    "package": "npm run build:prod && npm run package:server && npm run package:assets",
+    "package:server": "mkdir -p dist/ && cd build/server && zip -r ../../dist/${npm_package_name}-${npm_package_version}-${BUILD_NUMBER:-0}.zip . -x .git\\* node_modules\\* target\\*",
+    "package:assets": "cd build/assets && zip -r ../../dist/${npm_package_name}-assets-${npm_package_version}-${BUILD_NUMBER:-0}.zip ."
   },
   "repository": {
     "type": "git",

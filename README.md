@@ -3,9 +3,11 @@
 
 This boilerplate avoids making too many architectural decisions and instead focuses on providing tooling and build automation for development and production.
 
+
 ## Versions
 
 This has been tested and works with Node 4.3.0 and NPM 2.10.1 however, you will see a huge (buildtime) performance improvement using Node 6+ and NPM 3+ due to Babel module discovery improvements.
+
 
 ## Features
 
@@ -16,6 +18,7 @@ This has been tested and works with Node 4.3.0 and NPM 2.10.1 however, you will 
  - Express v4 (inc. hbs)
  - Webpack
  - PostCSS (with SASS support)
+
 
 ## Get started
 
@@ -38,6 +41,7 @@ npm start
 
 Webpack will watch for changes and automatically recompile your javascript and css on the fly to your ./build folder
 
+
 ## Build and runtime pattern
 
 - Babel CLI takes care of transpilation and webpack ensures fast recompile 
@@ -50,6 +54,21 @@ Webpack will watch for changes and automatically recompile your javascript and c
 - When a standard build is run, webpack watch is used to track only files with changes and re-process them to the build folder
 - Refreshing the browser will show latest React or CSS changes. This results in a very fast dev experience.
 
+
+Dev time build - will build server and assets uncompressed to ./build and watch css/js for changes 
+```
+npm run build
+```
+Production build - will build server and assets compressed to ./build
+```
+npm run build:prod
+```
+Distribution/deployment - will run build:prod and also package the server and assets to ./dist as separate zip files 
+```
+npm run package
+```
+
+
 ## Express
 
 - A simple Express server is supplied with handlebars view engine 
@@ -58,13 +77,13 @@ Webpack will watch for changes and automatically recompile your javascript and c
 The only 'custom' setting is the attachment of script and style tags to app.locals
 
 ```
-app.locals.scripts = viewtags.scripts;
-app.locals.styles = viewtags.styles;
+app.locals.scripts = tags.scripts;
+app.locals.styles = tags.styles;
 ```
 This is done to allow handlebars views to seamlessly inject script or style tags. The 'viewtags' module is a simple function used by webpack to determine the filenames of js/css for the latest build.
-In production build (build:prod) this also enables easy injection of hashed filenames
+In production build (build:prod) this also enables easy injection of hashed filenames.
 
-The viewtags module currently attaches tags for the {{{scripts}}} and {{{styles}}} hbs placeholders, more can be easily supported by editing the code in config/webpack/webpack.viewtags.js:
+The viewtags module currently creates tags for the {{{scripts}}} and {{{styles}}} hbs placeholders, more can be easily supported by editing the code in config/webpack/webpack.viewtags.js:
 
 ```
   var assetTagConfig = {
@@ -75,6 +94,7 @@ The viewtags module currently attaches tags for the {{{scripts}}} and {{{styles}
     deferredStyles: ''
   }
 ```
+
 
 ## Testing
 
@@ -88,11 +108,9 @@ All Jest configuration settings can be found in package.json, it has been config
 - Automocking is disabled by default - https://facebook.github.io/jest/docs/automatic-mocking.html#content 
 - By using the --coverage flag, a coverage report is shown in terminal and written to <root>./coverage
 
+
 ## TODO
 
-- Add es6 linting
 - Add basic redux example
-- Add packaging script for deployment
 - Add disabled/commented server-side render example
 - Add performance profile tooling
-- Redux devtools (maybe)

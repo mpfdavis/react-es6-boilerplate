@@ -38,16 +38,9 @@ function setAssetTagFileNames(stats) {
     deferredStyles: ''
   }
 
-  var buildPath = path.join(__dirname, '../../../build/');
-  var assetsPath = buildPath + 'assets/';
-  
+  var tagConfigPath = path.join(__dirname, '../../../build/server/views/tags.json');
 
-  if(!fs.lstatSync(buildPath).isDirectory()) {
-     fs.mkdirSync(buildPath);
-     fs.mkdirSync(assetsPath);
-  }
-
-  fs.writeFileSync(assetsPath + 'viewtags.json', JSON.stringify(assetTagConfig));
+  fs.writeFileSync(tagConfigPath, JSON.stringify(assetTagConfig));
 
 }
 
