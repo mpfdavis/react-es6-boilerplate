@@ -2,28 +2,44 @@ body {
   background: #484848; 
 }
 
-.App {
+.app {
   font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 10s linear;
+.app__logo {
+  animation: app__logo--spin infinite 10s linear;
   height: 140px;
 }
 
-.App-header {
+@keyframes app__logo--spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.app__header {
   padding: 20px 0 0 0;
   color: rgb(97, 218, 251);
 }
 
-.App-intro {
+.app__intro {
   padding-bottom:20px;
   font-size: 16px;
   color: white;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.app__example {
+  max-width: 500px;
+  margin:50px auto 0 auto; 
+  border: 10px solid white;
+  border-radius:3px;
+  background: white;
 }
+
+
+
+
+
+
+
+

@@ -1,20 +1,35 @@
 'use strict';
-import React, {Component} from 'react';
+import React from 'react';
+import Filter from '../Filter';
+import TodoAdd from '../../containers/TodoAdd';
+import TodoVisible from '../../containers/TodoVisible';
 import logo from './logo.svg';
 import './App.css';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1>Welcome to React</h1>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/app</code> and save to reload.
-         </p>
+const App = () => (
+  <div>
+    <div className="app">
+      <div className="app__header">
+        <img src={logo} className="app__logo" alt="logo" />
+        <h1>Welcome to React</h1>
       </div>
-    );
-  }
-}
+      <p className="app__intro">
+        To get started, edit <code>src/app</code> and save to reload.
+      </p>
+    </div>
+    <div className="app__example">
+      <div className="todo">
+        <div className="todo__header">
+          <h2>Todo list</h2>
+        </div>
+        <TodoAdd />
+        <TodoVisible />
+        <div className="filter">
+        <Filter />
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+export default App;

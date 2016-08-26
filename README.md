@@ -114,3 +114,4 @@ All Jest configuration settings can be found in package.json, it has been config
 - Add basic redux example
 - Add disabled/commented server-side render example
 - Add performance profile tooling
+- Cross-platform shell commands for npm scripts
