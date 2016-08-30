@@ -6,7 +6,7 @@ import './Todo.css';
 const TodoList = (props) => (
   <ul className="todo__list">
     {props.todos.map(todo =>
-      <Todo key={todo.id} {...todo} onClick={() => props.onTodoClick(todo.id)} />
+      <Todo key={todo.id} {...todo} onClick={() => props.onClick(todo.id)} />
     )}
   </ul>
 );
@@ -17,7 +17,7 @@ TodoList.propTypes = {
     completed: PropTypes.bool.isRequired,
     text: PropTypes.string.isRequired
   }).isRequired).isRequired,
-  onTodoClick: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired
 };
 
 export default TodoList;

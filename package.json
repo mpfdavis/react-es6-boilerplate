@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "start": "node ./build/server/index",
-    "test": "jest --coverage",
+    "test": "jest -u --coverage",
     "build": "npm run build:clean && npm run build:server && npm run build:webpack:dev",
     "build:prod": "npm run build:clean && npm run build:server && npm run build:webpack:prod",
     "build:clean": "rm -rf build && mkdir -p build && mkdir -p build/server && mkdir -p build/assets",
