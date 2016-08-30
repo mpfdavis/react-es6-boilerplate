@@ -63,7 +63,7 @@
     "webpack": "^1.13.1"
   },
   "jest": {
-    "automock": true,
+    "automock": false,
     "moduleFileExtensions": [
       "js",
       "jsx"
