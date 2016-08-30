@@ -3,6 +3,7 @@
 
 This boilerplate avoids making too many architectural decisions and instead focuses on providing tooling and build automation for development and production.
 
+- An ES6 version of the classic redux todo example is provided together with a few snapshot tests. All of this can be completely removed if desired.
 
 ## Versions
 
