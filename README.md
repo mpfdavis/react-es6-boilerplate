@@ -116,7 +116,7 @@ All Jest configuration settings can be found in package.json, it has been config
 3.1 GHz Intel Core i7
 16 GB 1867 MHz DDR3
 
-10 Test iterations
+10 Test iterations X ab -k -c 20 -n 250
 
 Average:
 
