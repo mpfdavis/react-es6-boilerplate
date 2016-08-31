@@ -112,6 +112,7 @@ All Jest configuration settings can be found in package.json, it has been config
 
 ## Load Testing
 
+```
 3.1 GHz Intel Core i7
 16 GB 1867 MHz DDR3
 
@@ -124,7 +125,7 @@ Time taken for tests:   0.059 seconds
 Requests per second:    4212.87 [#/sec] (mean)
 Time per request:       4.747 [ms] (mean)
 Time per request:       0.237 [ms] (mean, across all concurrent requests)
-
+```
 
 ## TODO
 
