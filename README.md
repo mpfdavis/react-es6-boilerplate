@@ -123,8 +123,6 @@ Average:
 Concurrency Level:      20
 Time taken for tests:   0.059 seconds
 Requests per second:    4212.87 [#/sec] (mean)
-Time per request:       4.747 [ms] (mean)
-Time per request:       0.237 [ms] (mean, across all concurrent requests)
 ```
 
 ## TODO
