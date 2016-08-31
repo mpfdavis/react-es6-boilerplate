@@ -24,6 +24,9 @@ module.exports = {
     new ExtractTextPlugin('assets/[name]-[hash:8]-styles-min.css'),
     function () { this.plugin('done', viewtags); }
   ],
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
   module: {
     loaders: [
       {

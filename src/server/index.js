@@ -9,9 +9,9 @@ const app = express().disable('x-powered-by').disable('etag');
 
 //app settings
 app.set('views', path.join(__dirname, 'views'))
-   .set('view engine', 'hbs')
-   .set('view cache', true)
-   .set('port', process.env.port || 8081);
+    .set('view engine', 'hbs')
+    .set('view cache', true)
+    .set('port', process.env.port || 8081);
 
 //app view engine
 app.engine('hbs', exphbs({

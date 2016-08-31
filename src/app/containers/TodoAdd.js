@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import { addTodo } from '../actions';
 
 let AddTodo = ({ dispatch }) => {
-  
+
   let inputAsRef;
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!inputAsRef.value.trim()) {

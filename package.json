@@ -1,9 +1,22 @@
 {
   "name": "react-boilerplate",
   "version": "1.0.0",
-  "engines" : { "node" : ">=6.3.1", "npm" : "~3.10.3" },
+  "engines": {
+    "node": ">=6.3.1",
+    "npm": "~3.10.3"
+  },
   "description": "React ES6 Boilerplate",
-  "keywords" : ["react", "express", "redux", "boilerplate", "starterkit", "es6", "handlebars", "jest", "postCSS"],
+  "keywords": [
+    "react",
+    "express",
+    "redux",
+    "boilerplate",
+    "starterkit",
+    "es6",
+    "handlebars",
+    "jest",
+    "postCSS"
+  ],
   "author": "Matt Davis",
   "license": "ISC",
   "scripts": {
@@ -68,7 +81,7 @@
       "js",
       "jsx"
     ],
-    "testRegex": ".*.test.js$",
+    "testRegex": ".*.test.(js|jsx)$",
     "testPathIgnorePatterns": [
       "/node_modules/",
       "/bower_components",
