@@ -1,0 +1,37 @@
+exports[`Todo fires event for supplied onClick handler 1`] = `
+<li
+  className="todo__item"
+  onClick={[Function mockHandler]}>
+  This is a todo item
+   
+</li>
+`;
+
+exports[`Todo fires event for supplied onClick handler 2`] = `
+<li
+  className="todo__item"
+  onClick={[Function mockHandler]}>
+  This is a todo item
+   
+</li>
+`;
+
+exports[`Todo renders correctly 1`] = `
+<li
+  className="todo__item"
+  onClick={[Function mockHandler]}>
+  This is a todo item
+   
+</li>
+`;
+
+exports[`Todo renders with span when completed is true 1`] = `
+<li
+  className="todo__item"
+  onClick={[Function mockHandler]}>
+  This is a todo item
+   
+  <span
+    className="todo__item--done" />
+</li>
+`;

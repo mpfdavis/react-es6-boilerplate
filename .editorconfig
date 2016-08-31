@@ -1,0 +1,7 @@
+[**.{js,jsx,scss,css}]
+indent_style = tab
+indent_size = 4
+
+[**.yaml]
+index_style = space
+index_size = 2
