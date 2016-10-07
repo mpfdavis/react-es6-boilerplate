@@ -15,7 +15,7 @@ This has been tested and works with Node 4.3.0 and NPM 2.10.1 however, you will 
  - Babel v6 (support for all ES6 syntax client and server)
  - React v15
  - Redux v3
- - Jest/Jasmine v14 (inc. snapshot support)
+ - Jest v16 (inc. snapshot support)
  - Express v4 (inc. hbs)
  - Webpack
  - PostCSS (with SASS support)
@@ -106,8 +106,8 @@ All Jest configuration settings can be found in package.json, it has been config
 - Find any file with a name containing 'test.js'
 - Ignore config, node_module, and other commonly unwanted areas
 - Mock css and images as objects to avoid require issues
-- Automocking is disabled by default - https://facebook.github.io/jest/docs/automatic-mocking.html#content 
 - By using the --coverage flag, a coverage report is shown in terminal and written to <root>./coverage
+- AirBnb's Enzyme is also included for shallow render support as required
 
 
 ## Load Testing
