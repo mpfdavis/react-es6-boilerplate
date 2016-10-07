@@ -39,12 +39,13 @@
   "dependencies": {
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0",
+    "outputcache": "^3.2.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
-    "react-router": "^2.6.1",
-    "react-router-redux": "^4.0.5",
-    "redux": "^3.5.2",
+    "react-router": "^2.8.1",
+    "react-router-redux": "^4.0.6",
+    "redux": "^3.6.0",
     "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
@@ -59,11 +60,12 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.11.6",
-    "css-loader": "^0.23.1",
+    "css-loader": "^0.24.0",
+    "enzyme": "^2.4.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
     "image-webpack-loader": "^1.8.0",
-    "jest-cli": "^14.1.0",
+    "jest-cli": "^16.0.0",
     "json-loader": "^0.5.4",
     "node-sass": "^3.7.0",
     "postcss-cssnext": "^2.7.0",
@@ -71,15 +73,16 @@
     "postcss-loader": "^0.9.1",
     "postcss-reporter": "^1.4.1",
     "precss": "^1.4.0",
+    "react-addons-test-utils": "^15.3.2",
     "react-test-renderer": "^15.3.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1"
   },
   "jest": {
-    "automock": false,
     "moduleFileExtensions": [
       "js",
-      "jsx"
+      "jsx",
+      "json"
     ],
     "testRegex": ".*.test.(js|jsx)$",
     "testPathIgnorePatterns": [
@@ -92,15 +95,6 @@
     "moduleDirectories": [
       "node_modules",
       "bower_components"
-    ],
-    "unmockedModulePathPatterns": [
-      "react",
-      "redux",
-      "react-dom",
-      "react-redux",
-      "react-router",
-      "react-router-redux",
-      "react-addons-test-utils"
     ],
     "moduleNameMapper": {
       "^.+\\.(css|less|scss|sass)$": "<rootDir>src/config/jest/styleMock.js",

@@ -2,7 +2,7 @@ exports[`FilterLink fires event for supplied onClick handler 1`] = `
 <a
   className="filter__button"
   href="#"
-  onClick={[Function handleClick]}>
+  onClick={[Function]}>
   All
 </a>
 `;
@@ -11,7 +11,7 @@ exports[`FilterLink fires event for supplied onClick handler 2`] = `
 <a
   className="filter__button"
   href="#"
-  onClick={[Function handleClick]}>
+  onClick={[Function]}>
   All
 </a>
 `;
@@ -34,7 +34,7 @@ exports[`FilterLink renders correctly 1`] = `
 <a
   className="filter__button"
   href="#"
-  onClick={[Function handleClick]}>
+  onClick={[Function]}>
   All
 </a>
 `;
