@@ -97,8 +97,7 @@
       "bower_components"
     ],
     "moduleNameMapper": {
-      "^.+\\.(css|less|scss|sass)$": "<rootDir>src/config/jest/styleMock.js",
-      "^.+\\.(gif|bmp|jpg|jpeg|png|ttf|eot|svg)$": "<rootDir>src/config/jest/fileMock.js"
+      "^.+\\.(css|less|scss|sass|gif|bmp|jpg|jpeg|png|ttf|eot|svg|woff)$": "<rootDir>src/config/jest/mock.js"
     }
   }
 }
