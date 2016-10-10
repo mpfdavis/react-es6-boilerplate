@@ -3,22 +3,21 @@
 
 This boilerplate avoids making too many architectural decisions and instead focuses on providing tooling and build automation for development and production.
 
-- An ES6 version of the classic redux todo example is provided together with a few snapshot tests. All of this can be completely removed if desired.
+
+## Features
+
+ - Babel v6x (support for all ES6 syntax client and server)
+ - React v15x
+ - Redux v3x
+ - Jest v16x (inc. enzyme and react test renderer)
+ - Express v4x (inc. hbs)
+ - Webpack
+ - PostCSS (with SASS support)
+
 
 ## Versions
 
 This has been tested and works with Node 4.3.0 and NPM 2.10.1 however, you will see a huge (buildtime) performance improvement using Node 6+ and NPM 3+ due to Babel module discovery improvements.
-
-
-## Features
-
- - Babel v6 (support for all ES6 syntax client and server)
- - React v15
- - Redux v3
- - Jest v16 (inc. snapshot support)
- - Express v4 (inc. hbs)
- - Webpack
- - PostCSS (with SASS support)
 
 
 ## Get started
